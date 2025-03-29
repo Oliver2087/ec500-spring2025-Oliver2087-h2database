@@ -143,6 +143,10 @@ public final class Comparison extends Condition {
                         : AUTO_PARENTHESES);
     }
 
+    public int getCompareType() {
+        return compareType;
+    }
+
     @Override
     public Expression optimize(SessionLocal session) {
         left = left.optimize(session);
