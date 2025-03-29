@@ -931,6 +931,10 @@ public class TableFilter implements ColumnResolver {
         }
     }
 
+    public Expression getFullCondition(){
+        return fullCondition;
+    }
+
     /**
      * Optimize the full condition. This will add the full condition to the
      * filter condition.
